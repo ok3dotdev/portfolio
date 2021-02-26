@@ -1,26 +1,23 @@
-import Head from 'next/head'
-import Contact from '../components/Contact'
-import Hero from '../components/Hero'
-import Navbar from '../components/Navbar'
-import Project from '../components/Project'
-import Services from '../components/Services'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Contact from "../components/Contact";
+import Hero from "../components/Hero";
+import Project from "../components/Project";
+import Services from "../components/Services";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next Apps</title>
+        <title>Henry Portfolio.</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='container'>
-        <Navbar/>
-        <Hero/>
-        <Services/>
-        <Project/>
-        <Contact/>
-       
+      <main className="container">
+        <Hero />
+        <Services />
+        {/* <Project />
+        <Contact /> */}
       </main>
 
       <footer className={styles.footer}>
@@ -29,10 +26,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
     </div>
-  )
+  );
 }
