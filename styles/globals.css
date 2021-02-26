@@ -205,4 +205,9 @@ ul {
     height: 40px;
     width: 40px;
   }
+  .social-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
 }
