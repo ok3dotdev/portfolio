@@ -49,7 +49,43 @@ ul {
 /* Navbar styles end */
 
 /* Main container styles start Hero */
+
 .hero {
+  width: 100%;
+  text-align: center;
+}
+.text__content {
+  text-align: center;
+}
+.description {
+  text-align: justify;
+  width: 50%;
+  margin: 0 auto;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  padding: 0px;
+  background-color: rgba(0, 20, 255, 0.17);
+}
+.title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+/* .image {
+  
+  background-color: rgba(0, 20, 255, 0.17);
+  width: auto;
+  height: auto;
+} */
+
+/* .hero {
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -57,14 +93,7 @@ ul {
 
   flex-direction: column;
 }
-.image {
-  background-color: rgba(0, 20, 255, 0.17);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
+
 
 .text__content {
   display: flex;
@@ -84,10 +113,7 @@ ul {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
 }
-.title {
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
+
 .hero p {
   font-size: 1.5vw;
   padding: 0 20vw;
@@ -102,15 +128,19 @@ ul {
 
 .hero-image {
   object-fit: contain;
-}
+} */
 
 .scroll_icon {
+  position: absolute;
+
+  bottom: 1.2rem;
   width: 1.5rem;
   height: 2.5rem;
   border-radius: 2rem;
   border: 2px solid black;
 
   display: flex;
+  margin-left: 50%;
 }
 
 .circle {
@@ -169,6 +199,13 @@ ul {
 
 /* projects ends */
 @media only screen and (min-width: 800px) {
+  .hero {
+    margin-top: 80px;
+  }
+  .description {
+    line-height: 30px;
+    font-size: 1.5vw;
+  }
   .scroll_icon {
     margin-top: 60px;
   }
@@ -178,6 +215,13 @@ ul {
   /* .social-icons {
     display: none;
   } */
+  .hero {
+    margin-top: 10px;
+  }
+
+  .description {
+    width: 90%;
+  }
   .service_boxes {
     padding: 0 20px;
     display: flex;
