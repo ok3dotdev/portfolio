@@ -9,11 +9,12 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Henry Portfolio.</title>
+        <title>Henry Portfolio Site</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="container">
+        
         <Hero />
         <Services />
         {/* <Project />
