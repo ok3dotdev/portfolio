@@ -17,8 +17,8 @@ export default function Home() {
         
         <Hero />
         <Services />
-        {/* <Project />
-        <Contact /> */}
+        {/* <Project />*/}
+        <Contact /> 
       </main>
 
       {/* <footer className={styles.footer}>

@@ -12,11 +12,6 @@ body {
   background-color: #f4fcfd;
 }
 
-section {
-  margin-top: 40px;
-  height: 100vh;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -26,25 +21,59 @@ li {
   list-style: none;
 }
 
-button {
-  padding: 10px 20px;
-}
+
 
 /* Navbar styles start */
-nav {
-  padding: 10px 20px;
+header{
   display: flex;
   width: 100%;
   justify-content: space-between;
+  min-height: 10vh;
   align-items: center;
+  padding: 0 15px;
 }
 
-ul {
+.nav-links{
   display: flex;
-  width: 30%;
-  justify-content: space-between;
-  align-items: center;
 }
+nav{
+  display: none;
+}
+.links{
+  margin-left: 4em;
+  font-size: 1.5vw;
+}
+.mobile__hamburger{
+  display: flex;
+  height: 5vh;
+  width: 2em;
+  
+  flex-direction: column;
+  justify-content: space-between;
+}
+.line{
+  background-color: black;
+  width: 100%;
+  height:   1vh;
+  
+}
+
+@media screen and (min-width: 768px) {
+  
+  /* Hide mobile hamburger on large screen sizes */
+      .mobile__hamburger{
+        display: none;
+      }
+    /* Show navigation links on large screen */
+    nav{
+      display: block;
+    }
+      header{
+        width: 85vw;
+        margin: 0 auto;
+      }
+  }
+
 
 /* Navbar styles end */
 
@@ -53,8 +82,12 @@ ul {
 .hero {
   width: 100%;
   text-align: center;
+  min-height: 90vh;
+  /* background-color: blue; */
 }
+
 .text__content {
+  margin-top: 2rem;
   text-align: center;
 }
 .description {
@@ -62,21 +95,26 @@ ul {
   width: 50%;
   margin: 0 auto;
 }
-.image {
+.hero__image {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   border-radius: 50%;
-  width: 140px;
-  height: 140px;
+  width: 9.5rem;
+  height: 9.5rem;
   padding: 0px;
   background-color: rgba(0, 20, 255, 0.17);
+  margin-top: 2.5rem;
+
 }
 .title {
+  
   margin-top: 10px;
   margin-bottom: 5px;
 }
+
+
 /* .image {
   
   background-color: rgba(0, 20, 255, 0.17);
@@ -173,7 +211,7 @@ ul {
 .service_boxes {
   padding: 0 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 64px;
   grid-template-rows: auto;
 }
@@ -199,9 +237,9 @@ ul {
 
 /* projects ends */
 @media only screen and (min-width: 800px) {
-  .hero {
+  /* .hero {
     margin-top: 80px;
-  }
+  } */
   .description {
     line-height: 30px;
     font-size: 1.5vw;
@@ -215,9 +253,9 @@ ul {
   /* .social-icons {
     display: none;
   } */
-  .hero {
+  /* .hero {
     margin-top: 10px;
-  }
+  } */
 
   .description {
     width: 90%;
